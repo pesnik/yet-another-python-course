@@ -2,9 +2,7 @@
 
 ## Welcome to the Course!
 
-Welcome to **Yet Another Python Course**, a hands-on learning journey designed for non-developer professionals to master Python programming. This repository, in the `roadmap-sh` branch, follows the [Python Developer Roadmap](https://roadmap.sh/python) to guide you from beginner to advanced skills. Whether you’re automating tasks, analyzing data, or exploring web development, this course offers practical, interactive lessons using [Marimo notebooks](https://docs.marimo.io/).
-
-This course is part of the `pesnik/yet-another-python-course` repository, reflecting my commitment to structured learning and mastery, inspired by my other projects like `elk-playground` and `django-repertoire`. Let’s dive into Python and build skills that matter!
+Welcome to **Yet Another Python Course**, a hands-on learning journey designed for non-developer professionals to master Python programming. This repository, follows the [Python Developer Roadmap](https://roadmap.sh/python) to guide you from beginner to advanced skills. Whether you’re automating tasks, analyzing data, or exploring web development, this course offers practical, interactive lessons using [Marimo notebooks](https://docs.marimo.io/).
 
 ## Course Overview
 
@@ -28,8 +26,6 @@ Each module includes:
 - (Optional) Build web apps or perform testing and asynchronous tasks.
 
 ## Repository Structure
-
-The `roadmap-sh` branch is organized as follows:
 
 ```
 yet-another-python-course/
@@ -65,7 +61,7 @@ yet-another-python-course/
 ### Installation
 1. **Clone the Repository**:
    ```bash
-   git clone -b roadmap-sh https://github.com/pesnik/yet-another-python-course.git
+   git clone -b trail2-python-exploration https://github.com/pesnik/yet-another-python-course.git
    cd yet-another-python-course
    ```
 
@@ -111,7 +107,7 @@ yet-another-python-course/
    Move from `basic` to `intermediate`, and explore `advanced` modules if desired. Advanced topics are optional for deeper learning.
 
 ## Syllabus
-For a detailed course outline, including module descriptions, exercises, and projects, see the [Syllabus](syllabus_roadmap_sh.md).
+For a detailed course outline, including module descriptions, exercises, and projects, see the [Syllabus](syllabus.pdf).
 
 ## Contributing
 Found a bug or want to suggest improvements? Open an issue or submit a pull request on the [GitHub repository](https://github.com/pesnik/yet-another-python-course). Your contributions help make this course better!
