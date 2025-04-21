@@ -27,4 +27,17 @@ print(linear_search([1, 3, 5], 3))  # Output: 1
 ```
 
 ## Resources
-- [Python Official Documentation -
+- [Python Official Documentation - Data Structures](https://docs.python.org/3/tutorial/datastructures.html)
+- [GeeksforGeeks - DSA](https://www.geeksforgeeks.org/data-structures/)
+
+## Exercises
+In `exercises.py`, try the following:
+1. Implement a stack using a list with push and pop operations.
+2. Write a linear search function to find an item in a list.
+3. Create a queue using a list with enqueue and dequeue operations.
+
+## Project
+In `project.py`, implement a simple task scheduler using a queue to manage tasks in order of submission.
+
+## Contact
+For questions, open an issue in the repository or email [your email].
