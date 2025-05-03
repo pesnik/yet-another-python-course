@@ -66,7 +66,41 @@ def _(mo):
 
 @app.cell
 def _():
+    from time import sleep
+    starting_value = 10
+
+    while starting_value >= 0:
+        sleep(1)
+        print(starting_value)
+        starting_value = starting_value - 1
+    return sleep, starting_value
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""# Manik Jor""")
     return
+
+
+@app.cell
+def _():
+    even = 1
+
+    while even <= 10:
+        print(even)
+        even = even + 2
+    return (even,)
+
+
+@app.cell
+def _():
+    number = 1
+    while number <= 10:
+        if number % 2 == 0:
+            print(number)
+
+        number += 1
+    return (number,)
 
 
 @app.cell(hide_code=True)
