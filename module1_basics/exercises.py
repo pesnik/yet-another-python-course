@@ -45,7 +45,31 @@ def _():
     return (j,)
 
 
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(
+        r"""
+        # 🚀 Liftoff Countdown: The Story Behind the Numbers
+
+        When you think of a rocket launch, what's the first thing that comes to mind?
+
+        **"10... 9... 8... 7..."** — the classic **reverse countdown**!
+        But did you know this tradition started in the **movies** before it became a real-life NASA staple?
+
+        ### 🎬 The Origin Story
+
+        The reverse countdown was popularized in Fritz Lang’s 1929 sci-fi film *Woman in the Moon*, where it added dramatic tension. NASA adopted it later — not for the drama, but to build precision and coordination in rocket launches.
+        """
+    )
+    return
+
+
 @app.cell
+def _():
+    return
+
+
+@app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""# Guessing Game""")
     return
@@ -63,14 +87,15 @@ def _():
     return gussed, hidden_number
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""## [Feature]: Oops! Limit exceeded""")
     return
 
 
 @app.cell
-def _():
+def _(mo):
+    mo.md(r"""# Excercise""")
     return
 
 
