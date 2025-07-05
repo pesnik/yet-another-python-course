@@ -7,6 +7,7 @@ app = marimo.App(width="medium")
 @app.cell(hide_code=True)
 def _():
     import marimo as mo
+
     return (mo,)
 
 
@@ -89,21 +90,9 @@ def _(sauslys_items):
 @app.cell
 def _():
     sim = [
-        {
-            "id": 1,
-            "name": "Prepaid",
-            "alias": "prepaid"
-        },
-        {
-            "id": 2,
-            "name": "Postpaid",
-            "alias": "postpaid"
-        },
-        {
-            "id": 3,
-            "name": "Propaid",
-            "alias": "propaid"
-        }
+        {"id": 1, "name": "Prepaid", "alias": "prepaid"},
+        {"id": 2, "name": "Postpaid", "alias": "postpaid"},
+        {"id": 3, "name": "Propaid", "alias": "propaid"},
     ]
 
     print(sim)
@@ -126,7 +115,7 @@ def _(prepaid):
 
 @app.cell
 def _(prepaid):
-    print(prepaid['alias'])
+    print(prepaid["alias"])
 
     keys = ["id", "name", "alias"]
     values = ["1", "Prepaid", "prepaid"]
@@ -135,11 +124,7 @@ def _(prepaid):
 
 @app.cell
 def _():
-    sausly_bakes = {
-        "fanta": 25,
-        'singara': 40
-    }
-
+    sausly_bakes = {"fanta": 25, "singara": 40}
 
     sausly_bakes["kolija_singara"] = 56
     print(sausly_bakes)
@@ -163,7 +148,7 @@ app._unparsable_cell(
 
     print(generated_list)
     """,
-    name="_"
+    name="_",
 )
 
 

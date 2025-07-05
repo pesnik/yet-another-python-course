@@ -7,6 +7,7 @@ app = marimo.App(width="medium")
 @app.cell(hide_code=True)
 def _():
     import marimo as mo
+
     return (mo,)
 
 
@@ -41,7 +42,6 @@ def _():
             print(f"{i} is odd")
         else:
             print(f"{i} is even")
-
 
     print(0 == False)
     print(1 == True)

@@ -4,13 +4,15 @@ from tkinter import ttk
 root = tk.Tk()
 root.geometry("600x500")
 
+
 # Commands
 def submit_filepath():
     print(filepath.get())
     f = open(filepath.get())
 
     lines = f.readlines()
-    label = tk.Label(text=f"total{ len(lines)}")
+    label = tk.Label(text=f"total{len(lines)}")
+
 
 # Widgets
 filepath = tk.StringVar()

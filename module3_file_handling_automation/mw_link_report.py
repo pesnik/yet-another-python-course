@@ -7,12 +7,16 @@ app = marimo.App(width="columns")
 @app.cell(hide_code=True)
 def _():
     import marimo as mo
+
     return
 
 
 @app.cell
 def _():
-    f = open('/home/pesnik/yet-another-python-course/Microwave Link Report_05-19-2025_05-47-44.csv', 'r')
+    f = open(
+        "/home/pesnik/yet-another-python-course/Microwave Link Report_05-19-2025_05-47-44.csv",
+        "r",
+    )
     return (f,)
 
 
@@ -25,7 +29,7 @@ def _(f):
 
 @app.cell
 def _(lines):
-    lines[11].split(',')
+    lines[11].split(",")
     return
 
 
@@ -49,9 +53,10 @@ def _(f):
 def _():
     import csv
 
-
-    with open('/home/pesnik/yet-another-python-course/Microwave Link Report_05-19-2025_05-47-44.csv') as csvfile:
-        csv_lines = csv.reader(csvfile, delimiter=',', quotechar='"')
+    with open(
+        "/home/pesnik/yet-another-python-course/Microwave Link Report_05-19-2025_05-47-44.csv"
+    ) as csvfile:
+        csv_lines = csv.reader(csvfile, delimiter=",", quotechar='"')
         for row in csv_lines:
             print(row)
 
@@ -66,7 +71,9 @@ def _():
     import pandas as pd
 
     df = pd.read_csv("Microwave Link Report_05-19-2025_05-47-44.csv", skiprows=11)
-    meta_df = pd.read_csv("Microwave Link Report_05-19-2025_05-47-44.csv", skipfooter=len(df) + 1)
+    meta_df = pd.read_csv(
+        "Microwave Link Report_05-19-2025_05-47-44.csv", skipfooter=len(df) + 1
+    )
     return df, meta_df
 
 
@@ -89,13 +96,13 @@ def _(meta_df):
 
 @app.cell
 def _(df):
-    df[df['Source PLA Type'] != '/']
+    df[df["Source PLA Type"] != "/"]
     return
 
 
 @app.cell
 def _(df):
-    cleaned_df = df[['Source PLA Type', 'Source PLA ID']]
+    cleaned_df = df[["Source PLA Type", "Source PLA ID"]]
     cleaned_df
     return
 

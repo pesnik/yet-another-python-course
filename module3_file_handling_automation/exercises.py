@@ -7,6 +7,7 @@ app = marimo.App(width="columns")
 @app.cell(hide_code=True)
 def _():
     import marimo as mo
+
     return (mo,)
 
 
@@ -19,13 +20,14 @@ def _(mo):
 @app.cell
 def _():
     import pandas as pd
+
     return (pd,)
 
 
 @app.cell
 def _(pd):
     df = pd.read_csv("Microwave Link Report_05-19-2025_05-47-44.csv", skiprows=11)
-    df[df['Source PLA ID'] != '/']
+    df[df["Source PLA ID"] != "/"]
     return
 
 

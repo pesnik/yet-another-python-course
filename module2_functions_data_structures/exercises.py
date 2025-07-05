@@ -7,6 +7,7 @@ app = marimo.App(width="medium")
 @app.cell(hide_code=True)
 def _():
     import marimo as mo
+
     return (mo,)
 
 
@@ -25,8 +26,7 @@ def _():
         else:
             print("even")
 
-        i+= 1
-
+        i += 1
 
     i = 20
     while i <= 30:
@@ -35,7 +35,7 @@ def _():
         else:
             print("even")
 
-        i+= 1
+        i += 1
     return
 
 
@@ -47,9 +47,9 @@ def _():
                 print(f"{start} = odd")
             else:
                 print(f"{start} = even")
-    
+
             start += 1
-        
+
     start = 10
     end = 20
     even_odd_printer(start, end)
@@ -66,8 +66,6 @@ def _(even_odd_printer):
 
 @app.cell
 def _():
-
-
     return
 
 

@@ -20,7 +20,7 @@ if not fun_fact:
 templates = [
     "Meet {name}, the {job_title} who {fun_fact}. Clearly, they're here to conquer the world of Python!",
     "{name}, a {job_title} by day, and someone who {fun_fact} by night. Watch out, Python world!",
-    "Introducing {name}, the {job_title} known for {fun_fact}. Python better watch its back!"
+    "Introducing {name}, the {job_title} known for {fun_fact}. Python better watch its back!",
 ]
 
 selected_template = random.choice(templates)

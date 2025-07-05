@@ -1,5 +1,3 @@
-
-
 import marimo
 
 __generated_with = "0.11.12"
@@ -9,6 +7,7 @@ app = marimo.App(width="medium", layout_file="layouts/exercises.grid.json")
 @app.cell(hide_code=True)
 def _():
     import marimo as mo
+
     return (mo,)
 
 
@@ -67,6 +66,7 @@ def _(mo):
 @app.cell
 def _():
     from time import sleep
+
     starting_value = 10
 
     while starting_value >= 0:
