@@ -1,0 +1,4 @@
+# Module 6 - Building Tools Dependencies
+click>=8.0.0
+# tkinter is built-in with Python
+# argparse is built-in with Python

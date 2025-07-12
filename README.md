@@ -37,7 +37,7 @@ Below is the detailed syllabus outlining the modules and topics covered in the c
   - **Exercises**: Extract data from a website, fetch data from a public API
   - **Project**: Scrape weather data from a website and save it to a CSV file
 
-- **[Module 5: Introduction to Data Analysis (Optional)](#module-5-introduction-to-data-analysis-optional)**
+- **[Module 5: Introduction to Data Analysis](#module-5-introduction-to-data-analysis)**
   - Introduction to pandas for data manipulation (dataframes, series)
   - Basic data operations (filtering, sorting, grouping)
   - Simple data visualization using matplotlib (e.g., bar charts, line graphs)
@@ -130,7 +130,7 @@ If you have questions or need help, feel free to open an issue in this repositor
 
 ---
 
-### Module 5: Introduction to Data Analysis (Optional)
+### Module 5: Introduction to Data Analysis
 - **Topics**:
   - Introduction to pandas for data manipulation (dataframes, series)
   - Basic data operations (filtering, sorting, grouping)
@@ -139,7 +139,7 @@ If you have questions or need help, feel free to open an issue in this repositor
   - Exercises: Clean and analyze a small dataset
   - Project: Analyze a dataset of sales data and create a bar chart to visualize sales by region
 
-[Go to Module 5](#module-5-introduction-to-data-analysis-optional)
+[Go to Module 5](#module-5-introduction-to-data-analysis)
 
 ---
 
@@ -176,7 +176,7 @@ To help you track your progress, consider using the checklist below. Check off e
   - [ ] Topics
   - [ ] Exercises
   - [ ] Project
-- [ ] **Module 5: Introduction to Data Analysis (Optional)**
+- [ ] **Module 5: Introduction to Data Analysis**
   - [ ] Topics
   - [ ] Exercises
   - [ ] Project

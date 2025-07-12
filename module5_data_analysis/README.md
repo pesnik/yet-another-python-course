@@ -1,8 +1,8 @@
-# Module 5: Introduction to Data Analysis (Optional)
+# Module 5: Introduction to Data Analysis
 
 ## Introduction
 
-In this optional module, you will learn the basics of data analysis with Python using the pandas library. You will also learn how to visualize data using matplotlib.
+In this module, you will learn the basics of data analysis with Python using the pandas library. You will also learn how to visualize data using matplotlib.
 
 ## Topics Covered
 
