@@ -28,7 +28,7 @@ def _():
 
 @app.cell
 def _(pd):
-    df = pd.read_csv("Microwave Link Report_05-19-2025_05-47-44.csv", skiprows=11)
+    df = pd.read_csv("data/Microwave Link Report_05-19-2025_05-47-44.csv", skiprows=11)
     df
     return (df,)
 
@@ -132,8 +132,8 @@ def _(df):
 
 
 @app.cell
-def _(df):
-    df.to_csv("cleaned.csv")
+def _():
+    # df.to_csv("cleaned.csv")
     return
 
 
@@ -176,7 +176,7 @@ def _(cleaned_df):
 @app.cell
 def _(cleaned_df):
     pla_capacity = cleaned_df.groupby("Source PLA Name")["Level Numeric"].sum()
-    pla_capacity.to_csv("pla_cap.csv")
+    # pla_capacity.to_csv("pla_cap.csv")
     return
 
 
@@ -243,8 +243,103 @@ def _(cleaned_df):
 
 
 @app.cell
+def _():
+    # cleaned_df.to_csv('link.csv')
+    return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r"""# Pandas: merge two dataframes""")
+    return
+
+
+@app.cell
+def _(pd):
+    students = pd.DataFrame({
+        'roll': [1, 2, 3, 4],
+        'name': ['achinta', 'robin', 'asif', 'fakhrul']
+    })
+    students
+    return (students,)
+
+
+@app.cell
+def _(pd):
+    grades = pd.DataFrame({
+        'roll': [2, 4, 5],
+        'grade': ['A+', 'A', 'D'],
+        'name': ['robin', 'fakhrul', 'Unknown']
+    })
+    grades
+    return (grades,)
+
+
+@app.cell
+def _(grades, pd, students):
+    pd.merge(students, grades, on='name', how='right')
+    return
+
+
+@app.cell
+def _(grades, pd, students):
+    pd.merge(students, grades, on='id', how='right')
+    return
+
+
+@app.cell
+def _(grades, pd, students):
+    new_df = pd.merge(students, grades, on='roll', how='outer', suffixes=('_student', '_grade'))
+    new_df
+    return
+
+
+@app.cell
+def _(grades):
+    # grades.drop('name', axis=1)
+    grades
+    return
+
+
+@app.cell
 def _(cleaned_df):
-    cleaned_df.to_csv('link.csv')
+    cleaned_df['Source PLA Type'].unique()
+    return
+
+
+@app.cell
+def _(cleaned_df):
+    cleaned_df.groupby('Link Name').sum('Level Numeric')
+    cleaned_df.groupby('Source PLA Name').sum('Level Numeric')
+    return
+
+
+@app.cell
+def _(cleaned_df):
+    def add_group_column(row):
+        # print(row)
+        source_pla_type = row['Source PLA Type']
+        link_name = row['Link Name']
+        source_pla_name = row['Source PLA Name']
+    
+        print(source_pla_type)
+        if source_pla_type == 'EPLA' or source_pla_type == 'PLA':
+            return source_pla_name
+            print("HERE")
+        else:
+            return link_name
+            print("HERE ALSO")
+    
+    cleaned_df['group_key'] = cleaned_df.apply(add_group_column, axis=1)
+    cleaned_df[['group_key', 'Source PLA Type']]
+
+    return
+
+
+@app.cell
+def _(cleaned_df):
+    cleaned_df.groupby('group_key').sum('Level Numeric').to_csv('grouped_df.csv')
+    cleaned_df.to_csv('cleaned_df.csv')
     return
 
 
