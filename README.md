@@ -52,6 +52,14 @@ Below is the detailed syllabus outlining the modules and topics covered in the c
   - **Exercises**: CLI calculator, file renamer, GUI calculator, text file viewer
   - **Project**: Create a multi-function file utility (CLI) and a personal productivity desktop app
 
+- **[Module 7: Web Applications and Interactive Reports](#module-7-web-applications-and-interactive-reports)**
+  - Introduction to web development with Flask (routes, templates, forms)
+  - Building interactive dashboards with Streamlit
+  - Creating machine learning demos with Gradio
+  - Deploying web applications (local deployment and cloud basics)
+  - **Exercises**: Simple Flask app, Streamlit data dashboard, Gradio interface
+  - **Project**: Build a comprehensive business reporting web application with user authentication and data visualization
+
 ## How to Use This Repository
 - Each module has its own folder (e.g., `module1_basics/`, `module2_functions_data_structures/`) containing:
   - A `README.md` with detailed explanations and examples.
@@ -157,6 +165,45 @@ If you have questions or need help, feel free to open an issue in this repositor
 
 ---
 
+### Module 7: Web Applications and Interactive Reports
+- **Topics**:
+  - **Flask Web Development**:
+    - Understanding web applications and HTTP basics
+    - Flask fundamentals (routes, templates, static files)
+    - HTML forms and user input handling
+    - Session management and basic authentication
+    - Database integration with SQLite
+  - **Streamlit for Data Dashboards**:
+    - Creating interactive data applications
+    - Widgets for user input (sliders, dropdowns, file uploads)
+    - Real-time data visualization and filtering
+    - Multi-page applications and navigation
+    - Caching for performance optimization
+  - **Gradio for Quick Demos**:
+    - Building interfaces for functions and models
+    - Input/output components (text, images, audio, files)
+    - Creating shareable demo links
+    - Integration with machine learning workflows
+  - **Deployment Basics**:
+    - Local deployment and testing
+    - Introduction to cloud platforms (Heroku, Streamlit Cloud)
+    - Environment variables and configuration management
+- **Interactivity**:
+  - **Exercise 1**: Create a simple Flask web app with a contact form
+  - **Exercise 2**: Build a Streamlit dashboard to explore a dataset with filters and charts
+  - **Exercise 3**: Create a Gradio interface for a text analysis function (word count, sentiment)
+  - **Exercise 4**: Deploy a simple Streamlit app to Streamlit Cloud
+- **Project**: Build a comprehensive business reporting web application that includes:
+  - Flask backend with user registration/login
+  - File upload functionality for CSV/Excel data
+  - Streamlit-powered analytics dashboard embedded in Flask
+  - Gradio interface for data preprocessing tasks
+  - Export functionality for reports and visualizations
+
+[Go to Module 7](#module-7-web-applications-and-interactive-reports)
+
+---
+
 ## Progress Checklist
 To help you track your progress, consider using the checklist below. Check off each module and its components as you complete them.
 
@@ -184,6 +231,26 @@ To help you track your progress, consider using the checklist below. Check off e
   - [ ] Topics
   - [ ] Exercises
   - [ ] Project
+- [ ] **Module 7: Web Applications and Interactive Reports**
+  - [ ] Topics
+  - [ ] Exercises
+  - [ ] Project
+
+---
+
+## Learning Path Recommendations
+
+### For Business Professionals:
+Focus on Modules 1-3, 5, and 7 for data analysis and reporting capabilities.
+
+### For Administrative Roles:
+Emphasize Modules 1-3, 6, and basic web concepts from Module 7.
+
+### For Analytics and Research:
+Complete all modules with extra attention to Modules 4, 5, and 7.
+
+### For Project Managers:
+Focus on Modules 1-3, and 7 for creating project dashboards and reports.
 
 ---
 
