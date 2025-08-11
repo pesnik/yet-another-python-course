@@ -354,7 +354,7 @@ def create_data_actions():
         
         if st.button("🔄 Reset Filters", help="Reset all filters and show original data"):
             st.session_state.filtered_df = st.session_state.original_df.copy()
-            st.experimental_rerun()
+            st.rerun()
         
         if st.button("📋 Copy Column Names", help="Copy all column names to clipboard"):
             columns_text = ", ".join(st.session_state.df.columns.tolist())
